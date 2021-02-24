@@ -1,8 +1,5 @@
-## [4.0.0]
-* Introduce null-safety. Thanks [Steve Alexander](https://github.com/SteveAlexander)
-
 ## [3.3.5]
-* Fix thread safety issues in android code to close [161](https://github.com/mogol/flutter_secure_storage/issues/161). Thanks [koskimas](https://github.com/koskimas)
+* Fixes thread safety issues in android code to close [161](https://github.com/mogol/flutter_secure_storage/issues/161). Thanks [koskimas](https://github.com/koskimas)
 
 ## [3.3.4]
 * Fix Android hanging UI on StorageCipher initialization [#116](https://github.com/mogol/flutter_secure_storage/issues/116) by [morrica](https://github.com/morrica)
