@@ -39,7 +39,7 @@ public class FlutterSecureStoragePlugin implements MethodCallHandler, FlutterPlu
     private Handler workerThreadHandler;
 
     private static final String ELEMENT_PREFERENCES_KEY_PREFIX = "VGhpcyBpcyB0aGUgcHJlZml4IGZvciBhIHNlY3VyZSBzdG9yYWdlCg";
-    private static final String SHARED_PREFERENCES_NAME = "FlutterSecureStorage";
+    private static final String SHARED_PREFERENCES_NAME = "RN_KEYCHAIN";
 
     public static void registerWith(Registrar registrar) {
       FlutterSecureStoragePlugin instance = new FlutterSecureStoragePlugin();
