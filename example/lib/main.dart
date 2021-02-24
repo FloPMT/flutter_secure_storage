@@ -31,8 +31,8 @@ class _ItemsWidgetState extends State<ItemsWidget> {
   Future<Null> _readAll() async {
     final all = await _storage.readAll();
     setState(() {
-      _items = all.entries
-          .map((entry) => _SecItem(entry.key, entry.value))
+      return _items = all.keys
+          .map((key) => _SecItem(key, all[key]))
           .toList(growable: false);
     });
   }
@@ -159,11 +159,11 @@ class _EditItemWidget extends StatelessWidget {
         autofocus: true,
       ),
       actions: <Widget>[
-        TextButton(
+        FlatButton(
             key: Key('cancel'),
             onPressed: () => Navigator.of(context).pop(),
             child: Text('Cancel')),
-        TextButton(
+        FlatButton(
             key: Key('save'),
             onPressed: () => Navigator.of(context).pop(_controller.text),
             child: Text('Save')),
